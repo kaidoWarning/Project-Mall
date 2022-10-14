@@ -8,7 +8,7 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * 
+ * 暂时没用 10.14
  * 
  * @author kaido
  * @email 2423751519@qq.com
