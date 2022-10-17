@@ -1,5 +1,6 @@
 package com.example.mall.coupon.controller;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
 
@@ -30,6 +31,13 @@ import com.example.common.utils.R;
 public class CouponController {
     @Autowired
     private CouponService couponService;
+
+    @RequestMapping("/member/list")
+    public R memberCoupon(){
+        CouponEntity couponEntity = new CouponEntity();
+        couponEntity.setCouponName("好东西 满减");
+        return R.ok().put("coupon", Arrays.asList(couponEntity));
+    }
 
     /**
      * 列表
